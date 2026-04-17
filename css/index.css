@@ -254,13 +254,13 @@ body {
 
 /* 현재 진행 중인 바의 하이라이트 */
 .progress_bar li.active {
-  background-color: rgba(255, 255, 255, 0.3); /* 배경은 유지 */
+  background-color: rgba(255, 255, 255, 0.3);
 }
 /* 게이지 바 내부의 움직이는 선 */
 .progress_bar li div {
   width: 0%;
   height: 100%;
-  background-color: #ff6b35; /* 활성화될 때 차오르는 흰색 선 */
+  background-color: #ff6b35;
 }
 /* 재생/일시정지 버튼 */
 .play_bar img {
@@ -986,12 +986,13 @@ body {
 }
 
 .news_slider {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .news_track {
   display: flex;
   flex-wrap: nowrap;
+  align-items: stretch;
   gap: 10px;
   width: max-content;
   animation: newsScroll 25s linear infinite;
@@ -1012,6 +1013,7 @@ body {
 
 .news_item {
   flex: 0 0 380px; /* 이미지 3개 + 다음 일부*/
+  min-height: min-content; /* 글씨가 잘려서 추가함*/
   background-color: #fff;
   border-radius: 15px;
   overflow: hidden;
@@ -1032,7 +1034,8 @@ body {
 }
 
 .news_info {
-  padding: 20px;
+  padding: 25px 20px;
+  flex-grow: 1;
 }
 
 .news_date {
@@ -1048,6 +1051,7 @@ body {
   color: #333;
   font-weight: 600;
   line-height: 1.4;
+  text-align: center;
 }
 
 /* 슬라이더 컨트롤 */
@@ -1058,7 +1062,7 @@ body {
   margin-top: 30px;
 }
 
-.slider_controls button {
+/* .slider_controls button {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -1075,7 +1079,7 @@ body {
 .slider_controls button:hover {
   background-color: green;
   color: #fff;
-}
+} */
 
 /* con03 반응형 */
 @media (max-width: 1023px) {
@@ -1123,6 +1127,8 @@ body {
 
   .news_item {
     flex: 0 0 300px; /* 이미지 1개 + 다음 일부 */
+    height: auto;
+    min-height: 250px;
   }
 
   .news_item img {
@@ -1131,20 +1137,23 @@ body {
 
   .news_info {
     padding: 15px;
+    text-align: center;
   }
 
   .news_info h4 {
     font-size: 0.95rem;
+    margin: 0 auto;
+    display: block;
   }
 
-  .slider_controls {
+  /* .slider_controls {
     gap: 10px;
   }
 
   .slider_controls button {
     width: 35px;
     height: 35px;
-  }
+  }*/
 }
 
 /* con04 약도 */

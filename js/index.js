@@ -175,34 +175,34 @@ $(function () {
     }
   });
 
-  // 이전/다음 버튼 (수동 스크롤)
-  $(".slider_prev").on("click", function () {
-    $(".news_track").css("animation-play-state", "paused");
-    $(".slider_pause").html('<i class="fa-solid fa-play"></i>');
-    isPaused = true;
+  // // 이전/다음 버튼 (수동 스크롤)
+  // $(".slider_prev").on("click", function () {
+  //   $(".news_track").css("animation-play-state", "paused");
+  //   $(".slider_pause").html('<i class="fa-solid fa-play"></i>');
+  //   isPaused = true;
 
-    const itemWidth = $(".news_item").first().outerWidth(true);
-    $(".news_track").animate(
-      {
-        scrollLeft: "-=" + itemWidth,
-      },
-      300,
-    );
-  });
+  //   const itemWidth = $(".news_item").first().outerWidth(true);
+  //   $(".news_track").animate(
+  //     {
+  //       scrollLeft: "-=" + itemWidth,
+  //     },
+  //     300,
+  //   );
+  // });
 
-  $(".slider_next").on("click", function () {
-    $(".news_track").css("animation-play-state", "paused");
-    $(".slider_pause").html('<i class="fa-solid fa-play"></i>');
-    isPaused = true;
+  // $(".slider_next").on("click", function () {
+  //   $(".news_track").css("animation-play-state", "paused");
+  //   $(".slider_pause").html('<i class="fa-solid fa-play"></i>');
+  //   isPaused = true;
 
-    const itemWidth = $(".news_item").first().outerWidth(true);
-    $(".news_track").animate(
-      {
-        scrollLeft: "+=" + itemWidth,
-      },
-      300,
-    );
-  });
+  //   const itemWidth = $(".news_item").first().outerWidth(true);
+  //   $(".news_track").animate(
+  //     {
+  //       scrollLeft: "+=" + itemWidth,
+  //     },
+  //     300,
+  //   );
+  // });
 
   // 카드 클릭 시 링크 이동 (예시)
   $(".news_item").on("click", function () {
@@ -242,19 +242,19 @@ $(function () {
     stagger: 0.2,
   });
 
-  // con03 뉴스 등장 (아래에서 위로)
-  gsap.from(".news_item", {
-    scrollTrigger: {
-      trigger: ".news_track",
-      start: "top 85%",
-      once: true,
-    },
-    y: 50,
-    opacity: 0,
-    duration: 0.6,
-    ease: "power2.out",
-    stagger: 0.1,
-  });
+  // // con03 뉴스 등장 (아래에서 위로)
+  // gsap.from(".news_item", {
+  //   scrollTrigger: {
+  //     trigger: ".news_track",
+  //     start: "top 85%",
+  //     once: true,
+  //   },
+  //   y: 50,
+  //   opacity: 0,
+  //   duration: 0.6,
+  //   ease: "power2.out",
+  //   stagger: 0.2,
+  // });
 
   // con04 등장 (왼쪽에서 톡톡톡)
   // 지도 이미지 먼저
