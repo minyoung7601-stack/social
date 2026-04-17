@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>사회복지 홈페이지</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/jquery-4.0.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.15/dist/ScrollTrigger.min.js"></script>
+    <script src="js/index.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header id="header">
+        <div class="gnb">
+          <h1 class="logo">
+            <a class="logo01" href="index.html"
+              ><img src="img/gnb_logo1.png" alt="logo"
+            /></a>
+            <a class="logo02" href="index.html"
+              ><img src="img/gnb_logo2.png" alt="logo"
+            /></a>
+          </h1>
+          <div class="navi">
+            <ul>
+              <li>
+                <a href="#">ABOUT</a>
+                <ul class="sub_menu">
+                  <li><a href="#">상상플래닛이란?</a></li>
+                  <li><a href="#">함께하는 사람들</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">AI CARE</a>
+                <ul class="sub_menu">
+                  <li><a href="#">AI 시각장애인 서비스</a></li>
+                  <li><a href="#">AI 휠체어 내비게이션</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">PARTER</a>
+                <ul class="sub_menu">
+                  <li><a href="#">Global Partners </a></li>
+                  <li><a href="#">AI 기술 활용 투어</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">AI 단말기</a>
+                <ul class="sub_menu">
+                  <li><a href="#">AI 단말기 소개</a></li>
+                  <li><a href="#">AI 단말기 체험</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">NEWS</a>
+                <ul class="sub_menu">
+                  <li><a href="#">공지사항</a></li>
+                  <li><a href="#">보도자료</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <div class="icon">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="#"><i class="fa-solid fa-share-nodes"></i></a>
+          </div>
+          <div class="m_menu">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+          </div>
+        </div>
+      </header>
+      <!-- visual 시작 -->
+      <div id="visual">
+      <ul class="panel">
+        <li class="bg01"></li>
+        <li class="bg02"></li>
+        <li class="bg03"></li>
+      </ul>
+      <div class="txt_wrap">
+        <ul class="txt">
+          <li>
+            <h2>
+              AI의 <span>기술</span>과<br /><span>편리함</span>은 모두를 위해 존재합니다
+            </h2>
+            <p>
+              AI로 더 많은 사람들이 일상 속 편안함을 누릴 수 있도록
+            </p>
+          </li>
+          <li>
+            <h2>
+              AI로<br />
+              <span>소외되지 않는</span> 세상을 만드는 기술
+            </h2>
+            <p>
+              AI는 더 많은 사람을 연결하고, 더 따뜻한 내일을 만듭니다
+            </p>
+          </li>
+          <li>
+            <h2>
+              AI 기술이 제공하는<br />
+              <span>따뜻한 설계</span>
+            </h2>
+            <p>
+              누구도 뒤처지지 않도록, 기술이 먼저 다가갑니다
+            </p>
+          </li>
+        </ul>
+        <ul class="control">
+          <li class="prev"><img src="img/btn_swiper_prev.svg" /></li>
+          <li>
+            <ul class="progress_bar">
+              <li class="active">
+                <div></div>
+              </li>
+              <li>
+                <div></div>
+              </li>
+              <li>
+                <div></div>
+              </li>
+            </ul>
+          </li>
+          <li class="play_bar">
+            <img class="pause" src="img/btn_swiper_pause.svg" alt="" />
+            <img class="play" src="img/btn_swiper_play.svg" alt="" />
+          </li>
+          <li class="next"><img src="img/btn_swiper_next.svg" /></li>
+        </ul>
+      </div>
+      <div class="scroll">
+        <p>SCROLL</p>
+        <div class="bar">
+          <div class="circle"></div>
+        </div>
+      </div>
+    </div>
+<!-- Visual 영역 끝 -->
+<!-- con01 AI CARE 영역 -->
+<main id="container">
+        <section id="con01" class="section_space">
+            <div class="inner">
+                <div class="item">
+                    <div class="txt_box">
+                        <span class="badge">BARRIER-FREE KIOSK FOR WAYFINDING</span>
+                        <h3>길안내용<br>베리어프리 키오스크</h3>
+                        <div class="line"></div>
+                        <p>건물의 로비나 입구에 설치하여 건물의 동선을 효과적으로 안내할 수 있으며, 촉각 패드를 통해 측자도 기능을 대신할 수 있습니다.</p>
+                        <ul class="check_list">
+                            <li>사용자에 맞게 화면 높낮이 조절</li>
+                            <li>사회적 약자를 위한 음성안내</li>
+                            <li>이어폰을 통한 개인 정보습득 보장</li>
+                            <li>사용자가 원하는 음량조절 가능</li>
+                            <li>화면터치가 어려운 고객을 위한 스마트 키패드</li>
+                            <li>저시력자와 고령자를 위한 돋보기 기능</li>
+                            <li>목적지까지 경로확인이 가능한 디지털 측자</li>
+                        </ul>
+                    </div>
+                    <div class="img_box"><img src="img/con01_1.jpg" alt="베리어프리 키오스크"></div>
+                </div>
+                <div class="item reverse">
+                    <div class="txt_box">
+                        <span class="badge">BARRIER-FREE KIOSK FOR WAYFINDING</span>
+                        <h3>길안내용<br>휠체어 내비게이션 APP</h3>
+                        <div class="line"></div>
+                        <p>건물의 로비나 입구에 설치하여 건물의 동선을 효과적으로 안내할 수 있으며, 촉각 패드를 통해 측자도 기능을 대신할 수 있습니다.</p>
+                        <ul class="check_list">
+                            <li>사용자에 맞게 화면 높낮이 조절</li>
+                            <li>사회적 약자를 위한 음성안내</li>
+                            <li>이어폰을 통한 개인 정보습득 보장</li>
+                            <li>사용자가 원하는 음량조절 가능</li>
+                            <li>화면터치가 어려운 고객을 위한 스마트 키패드</li>
+                            <li>저시력자와 고령자를 위한 돋보기 기능</li>
+                            <li>목적지까지 경로확인이 가능한 디지털 측자</li>
+                        </ul>
+                    </div>
+                    <div class="img_box"><img src="img/con01_2.png" alt="휠체어 내비게이션 APP"></div>
+                </div>
+            </div>
+        </section>
+
+        
+    <!-- banner -->
+    <section id="banner">
+      <div class="inner">
+        <h2>글로벌 파트너들과 함께 혁신을 이끕니다</h2>
+        <p>전 세계 의료기관, 제약사, 빅테크와 협력하여 AI를 통한 인간의 따뜻한 연결을 향해 나아갑니다.</p>
+        <div class="scroll_wrap">
+          <div class="scroll_track">
+            <div class="partner_logos">
+              <img src="img/partner1.png" alt="Leica Biosystems">
+              <img src="img/partner2.png" alt="indica labs">
+              <img src="img/partner3.png" alt="CellCarta">
+              <img src="img/partner4.png" alt="Myriad genetics">
+              <img src="img/partner5.png" alt="GUARDANT">
+              <img src="img/partner6.png" alt="Microsoft">
+            </div>
+            <div class="partner_logos">
+              <img src="img/partner1.png" alt="Leica Biosystems">
+              <img src="img/partner2.png" alt="indica labs">
+              <img src="img/partner3.png" alt="CellCarta">
+              <img src="img/partner4.png" alt="Myriad genetics">
+              <img src="img/partner5.png" alt="GUARDANT">
+              <img src="img/partner6.png" alt="Microsoft">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- con02 AI 활용  -->
+    <section id="con02">
+      <div class="inner">
+        <h2 class="con02_tit">재단이 준비하는 내일</h2>
+        <div class="gallery_wrap">
+          <div class="gallery_item" data-index="0">
+            <img src="img/con02_1.jpg" alt="AI 서비스 1">
+            <div class="overlay">
+              <span>자세히 보기</span>
+            </div>
+          </div>
+          <div class="gallery_item" data-index="1">
+            <img src="img/con02_2.jpg" alt="AI 서비스 2">
+            <div class="overlay">
+              <span>자세히 보기</span>
+            </div>
+          </div>
+          <div class="gallery_item" data-index="2">
+            <img src="img/con02_3.jpg" alt="AI 서비스 3">
+            <div class="overlay">
+              <span>자세히 보기</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+      <div class="modal_content">
+        <span class="modal_close">&times;</span>
+        <img id="modal_img" src="" alt="">
+        <div class="modal_txt">
+          <h3 id="modal_title">타이틀</h3>
+          <p id="modal_desc">설명 텍스트</p>
+        </div>
+      </div>
+    </div>
+    <!-- con03 NEWS -->
+    <section id="con03">
+      <div class="inner">
+        <div class="con03_header">
+          <h2 class="con03_tit">관련 소식</h2>
+          <a href="#" class="btn_more">모든 소식 보기</a>
+        </div>
+        <div class="news_slider_wrap">
+          <div class="news_slider">
+            <div class="news_track">
+              <div class="news_item">
+                <img src="img/news1.jpg" alt="뉴스 1">
+                <div class="news_info">
+                  <span class="news_date">2024.12.15</span>
+                  <h4>AI 보조 기술 신규 특허 등록</h4>
+                </div>
+              </div>
+              <div class="news_item">
+                <img src="img/news2.jpg" alt="뉴스 2">
+                <div class="news_info">
+                  <span class="news_date">2024.12.10</span>
+                  <h4>스마트 키오스크 시범 운영 시작</h4>
+                </div>
+              </div>
+              <div class="news_item">
+                <img src="img/news3.jpg" alt="뉴스 3">
+                <div class="news_info">
+                  <span class="news_date">2024.12.05</span>
+                  <h4>모바일 내비게이션 앱 출시</h4>
+                </div>
+              </div>
+              <div class="news_item">
+                <img src="img/news4.jpg" alt="뉴스 4">
+                <div class="news_info">
+                  <span class="news_date">2024.11.28</span>
+                  <h4>사회적 약자 지원 협약 체결</h4>
+                </div>
+              </div>
+              <!-- 무한 루프 -->
+              <div class="news_item">
+                <img src="img/news1.jpg" alt="뉴스 1">
+                <div class="news_info">
+                  <span class="news_date">2024.12.15</span>
+                  <h4>AI 보조 기술 신규 특허 등록</h4>
+                </div>
+              </div>
+              <div class="news_item">
+                <img src="img/news2.jpg" alt="뉴스 2">
+                <div class="news_info">
+                  <span class="news_date">2024.12.10</span>
+                  <h4>스마트 키오스크 시범 운영 시작</h4>
+                </div>
+              </div>
+              <div class="news_item">
+                <img src="img/news3.jpg" alt="뉴스 3">
+                <div class="news_info">
+                  <span class="news_date">2024.12.05</span>
+                  <h4>모바일 내비게이션 앱 출시</h4>
+                </div>
+              </div>
+              <div class="news_item">
+                <img src="img/news4.jpg" alt="뉴스 4">
+                <div class="news_info">
+                  <span class="news_date">2024.11.28</span>
+                  <h4>사회적 약자 지원 협약 체결</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider_controls">
+            <button class="slider_prev"><i class="fa-solid fa-chevron-left"></i></button>
+            <button class="slider_next"><i class="fa-solid fa-chevron-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- con04 약도 -->
+    <section id="con04">
+      <div class="inner">
+        <div class="con04_map">
+          <div class="map_image">
+            <img src="img/map.jpg" alt="상상플래닛 위치">
+          </div>
+        </div>
+        <div class="con04_info">
+          <div class="con04_logo">
+            <h3>KT&G <span>상상플래닛</span></h3>
+          </div>
+          <ul class="info_list">
+            <li>
+              <h4>ADDRESS</h4>
+              <p>서울시 성동구 뚝섬로 13길 38 (성수동 2가)<br>(서울시 성동구 성수동 2가 271-11)</p>
+            </li>
+            <li>
+              <h4>PLACE</h4>
+              <p>2호선 성수역 3번 출구 도보 7분<br>도심과 강남을 잇는 교통의 요지</p>
+            </li>
+            <li>
+              <h4>BUSINESS</h4>
+              <p>소셜벤처/스타트업 비즈니스 네트워킹에<br>최적화 된 성수동 소셜벤처 밸리</p>
+            </li>
+            <li>
+              <h4>CULTURE</h4>
+              <p>복합문화공간 성수연방, 에스팩토리 등 기존<br>산업과 젊은 문화예술이 공존하는 성수의 인근</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <footer id="footer">
+      <div class="inner">
+        <div class="footer_left">
+          <div class="footer_logo">
+            <img src="img/gnb_logo1.png" alt="KT&G 상상플래닛">
+          </div>
+          <p class="copyright">Copyright 2020 KT&G Corp. All Rights Reserved.</p>
+        </div>
+        <div class="footer_right">
+          <div class="social_links">
+            <a href="#" class="social_icon facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social_icon instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social_icon youtube"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" class="social_icon blog"><i class="fa-solid fa-n"></i></a>
+          </div>
+          <div class="family_site">
+            <select>
+              <option value="">FAMILY SITE</option>
+              <option value="ktg">KT&G</option>
+              <option value="sangsang">상상마당</option>
+              <option value="univ">상상대학</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
