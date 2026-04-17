@@ -585,6 +585,7 @@ body {
   color: #555;
   position: relative;
   padding-left: 24px;
+  word-break: keep-all;
 }
 
 #con01 .check_list li::before {
