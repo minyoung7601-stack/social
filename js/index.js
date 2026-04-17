@@ -221,11 +221,11 @@ $(function () {
       start: "top 80%",
       once: true,
     },
-    y: 80,
-    opacity: 0,
-    duration: 0.8,
-    ease: "power2.out",
-    stagger: 0.2,
+    y: 200,
+    opacity: 0.1,
+    duration: 1.2,
+    ease: "power3.out",
+    stagger: 1.2,
   });
 
   // con02 갤러리 등장 (왼쪽에서 톡톡톡)
@@ -293,8 +293,8 @@ $(function () {
       once: true,
     },
     y: 30,
-    opacity: 0,
-    duration: 0.6,
+    opacity: 0.1,
+    duration: 0.8,
     ease: "power2.out",
   });
 });
