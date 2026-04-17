@@ -227,6 +227,7 @@ body {
   font-size: 1.2rem;
   line-height: 2rem;
   margin: 20px 0px;
+  word-break: keep-all;
 }
 
 /* 컨트롤러 (하단 바) */
